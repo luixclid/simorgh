@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      paypal.Button.render({
+        style: {
+          size: "responsive",
+        },
+      });
+    </script>
+
+    <title>Simorgh Saffron</title>
+  </head>
+  <body>
+    <div class="contain">
+      <div class="top">
+        <div class="title-eng"></div>
+        <div class=""></div>
+        <div class="title-per"></div>
+        <div class=""></div>
+      </div>
+    </div>
+    <div class="simorgh-img"></div>
+    <div class="main">
+      <div class="item">
+        <div class="main-img-100gr"></div>
+        <div class="main-text">
+          <div class="text-eng">
+            <h3>SARGOL QUALITY SAFFRON</h3>
+            <p>21.7 Meshqal (100 grs)</p>
+          </div>
+        </br>
+        <div class="text-per">
+          <h3>زعفران سرگل ممتاز</h3>
+
+          <p>
+            (م۲۱.۷ مثقال (۱۰۰ گرم
+          </p>
+        </div>
+          <div class="price">
+            <p>$329.<sup>99</sup> Item Value</p>
+            <p>$ 32.<sup>99</sup> Tax</p>
+            <p>$ 10.<sup>00</sup> Shipping</p>
+            <h3>$372.<sup>98</sup> Total</h3>
+          </div>
+          <div class="paypal">
+            <div id="paypal-button-container2"></div>
+            <script
+              src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+              data-sdk-integration-source="button-factory"
+            ></script>
+            <script>
+              paypal
+                .Buttons({
+                  style: {
+                    shape: "pill",
+                    color: "gold",
+                    layout: "vertical",
+                    label: "buynow",
+                  },
+                  createOrder: function (data, actions) {
+                    return actions.order.create({
+                      purchase_units: [
+                        {
+                          amount: {
+                            value: "372.98",
+                          },
+                        },
+                      ],
+                    });
+                  },
+                  onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {
+                      alert(
+                        "Transaction completed by " +
+                          details.payer.name.given_name +
+                          "!"
+                      );
+                    });
+                  },
+                })
+                .render("#paypal-button-container2");
+            </script>
+          </div>
+          <!-- <div class="buy-btn">
+            Buy Now
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      Copyright 2020 Smart Star Deals
+    </div>
+  </body>
+</html>

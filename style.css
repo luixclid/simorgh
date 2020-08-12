@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  background-image: url("/ssd/Iranian-Saffron-Iran.jpg");
+  background-size: contain;
+  height: 15vw;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 10vw 2fr 30vw;
+  padding: 10px;
+  -webkit-filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0px 2px 0px rgba(0, 0, 0, 0.2));
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-eng {
+  background-image: url("/ssd/title-eng.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 20vw;
+}
+
+.title-per {
+  background-image: url("/ssd/title-per.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 20vw;
+}
+
+.simorgh-img {
+  background-image: url("/ssd/simorgh-main.png");
+  background-size: cover;
+  height: 40vw;
+  width: 30vw;
+  position: absolute;
+  right: 20px;
+  top: 5vw;
+}
+
+.main {
+  background-image: url("/ssd/moqarnas3.jpg");
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 35vw;
+  padding-top: 10vw;
+  justify-items: center;
+}
+
+.main-img-glass {
+  background-image: url("/ssd/container2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: auto;
+  padding: 20px;
+}
+
+.main-img-100gr {
+  background-image: url("/ssd/100grsSaffron.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20vw;
+  height: auto;
+  padding: 20px;
+}
+
+.main-text {
+  text-align: left;
+  justify-self: left;
+}
+
+h3 {
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+h2 {
+  font-size: 4vw;
+  font-weight: bolder;
+}
+
+.text-per {
+  text-align: right;
+}
+.buy-btn {
+  background-color: #a60f11;
+  padding: 10px 5px;
+  border-radius: 15px;
+  color: yellow;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.paypal {
+  width: 100%;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.buy-btn:hover {
+  background-color: rgb(219, 199, 130);
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  background-color: #a60f11;
+  width: 100%;
+  height: 120px;
+  padding-top: 50px;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .top {
+    height: 85vw;
+    display: block;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .title-eng {
+    width: 50vw;
+    height: 30vw;
+    display: inline-block;
+  }
+
+  .title-per {
+    width: 50vw;
+    height: 30vw;
+    display: inline-block;
+  }
+
+  .simorgh-img {
+    height: 60vw;
+    width: 40vw;
+    top: 60vw;
+    right: 30vw;
+  }
+
+  .main {
+    padding-top: 130px;
+  }
+
+  .item {
+    grid-template-columns: 1fr 2fr;
+  }
+  .main-text {
+    width: 60vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+}

@@ -5,7 +5,7 @@
 }
 
 .top {
-  background-image: url("/ssd/Iranian-Saffron-Iran.jpg");
+  background-image: url("/Iranian-Saffron-Iran.jpg");
   background-size: contain;
   height: 15vw;
   width: 100%;
@@ -18,7 +18,7 @@
 }
 
 .title-eng {
-  background-image: url("/ssd/title-eng.png");
+  background-image: url("/title-eng.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: auto;
@@ -26,7 +26,7 @@
 }
 
 .title-per {
-  background-image: url("/ssd/title-per.png");
+  background-image: url("/title-per.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: auto;
@@ -34,7 +34,7 @@
 }
 
 .simorgh-img {
-  background-image: url("/ssd/simorgh-main.png");
+  background-image: url("/simorgh-main.png");
   background-size: cover;
   height: 40vw;
   width: 30vw;
@@ -44,7 +44,7 @@
 }
 
 .main {
-  background-image: url("/ssd/moqarnas3.jpg");
+  background-image: url("/moqarnas3.jpg");
   min-height: 100vh;
   padding-bottom: 50px;
 }
@@ -57,7 +57,7 @@
 }
 
 .main-img-glass {
-  background-image: url("/ssd/container2.png");
+  background-image: url("/container2.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 20vw;
@@ -66,7 +66,7 @@
 }
 
 .main-img-100gr {
-  background-image: url("/ssd/100grsSaffron.png");
+  background-image: url("/100grsSaffron.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 20vw;

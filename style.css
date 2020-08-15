@@ -36,11 +36,44 @@
 .simorgh-img {
   background-image: url("/simorgh-main.png");
   background-size: cover;
+
   height: 40vw;
   width: 30vw;
-  position: absolute;
   right: 20px;
   top: 5vw;
+
+  position: absolute;
+  z-index: 2;
+
+  animation: fly 12s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fly {
+  20% {
+    height: 38vw;
+    width: 28vw;
+    right: 2vw;
+    top: 7vw;
+  }
+  40% {
+    height: 40vw;
+    width: 30vw;
+    right: 0vw;
+    top: 7vw;
+  }
+  60% {
+    height: 38vw;
+    width: 28vw;
+    right: 2vw;
+    top: 5vw;
+  }
+  80% {
+    height: 40vw;
+    width: 30vw;
+    right: 0vw;
+    top: 5vw;
+  }
 }
 
 .main {
@@ -154,8 +187,35 @@ a:hover {
   .simorgh-img {
     height: 60vw;
     width: 40vw;
-    top: 60vw;
     right: 30vw;
+    top: 60vw;
+  }
+
+  @keyframes fly {
+    20% {
+      height: 58vw;
+      width: 38vw;
+      right: 28vw;
+      top: 62vw;
+    }
+    40% {
+      height: 60vw;
+      width: 40vw;
+      right: 30vw;
+      top: 62vw;
+    }
+    60% {
+      height: 58vw;
+      width: 38vw;
+      right: 28vw;
+      top: 60vw;
+    }
+    80% {
+      height: 60vw;
+      width: 40vw;
+      right: 30vw;
+      top: 60vw;
+    }
   }
 
   .main {
